@@ -8,7 +8,7 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts (facultatif pour une touche moderne) -->
+    <!-- Google Fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -21,19 +21,43 @@
 </head>
 <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
 
-    <!-- Header -->
-    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <header class="bg-white shadow-md p-5 flex justify-between items-center">
         <h1 class="text-xl sm:text-2xl font-bold text-[#2E5C4D]">🕌 Quizz Islamique</h1>
-        <nav>
-            <ul class="flex space-x-4 text-sm sm:text-base">
-                <li><a href="{% url 'accueil' %}" class="hover:text-[#2E5C4D] transition">Accueil</a></li>
-                <li><a href="{% url 'categories' %}" class="hover:text-[#2E5C4D] transition">Catégories</a></li>
-            </ul>
+        
+        <!-- Menu desktop -->
+        <nav class="hidden sm:flex space-x-4 text-sm sm:text-base">
+            <a href="{% url 'accueil' %}" class="hover:text-[#2E5C4D] transition">Accueil</a>
+            <a href="{% url 'categories' %}" class="hover:text-[#2E5C4D] transition">Catégories</a>
         </nav>
+    
+        <!-- Bouton burger visible uniquement sur mobile -->
+        <button id="menu-toggle" class="sm:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-[#2E5C4D]" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
     </header>
+    
+    
+    <!-- Side Menu -->
+    <nav id="side-menu" class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 sm:hidden">
+        <div class="p-4 flex justify-between items-center border-b">
+            <span class="font-bold text-[#2E5C4D] text-lg">Menu</span>
+            <button id="menu-close" class="text-gray-600 hover:text-red-600">
+                ❌
+            </button>
+        </div>
+        <ul class="p-4 space-y-4">
+            <li><a href="{% url 'accueil' %}" class="block text-gray-800 hover:text-[#2E5C4D]">Accueil</a></li>
+            <li><a href="{% url 'categories' %}" class="block text-gray-800 hover:text-[#2E5C4D]">Catégories</a></li>
+        </ul>
+    </nav>
+    
 
     <!-- Contenu principal -->
-    <main class="flex-grow p-4 sm:p-6">
+    <main class="flex-grow flex items-center justify-center p-4 sm:p-6">
         {% block content %}{% endblock %}
     </main>
 
@@ -44,4 +68,18 @@
 
     {% block scripts %}{% endblock %}
 </body>
+<!-- JavaScript -->
+<script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const closeBtn = document.getElementById('menu-close');
+    const sideMenu = document.getElementById('side-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        sideMenu.classList.remove('translate-x-full');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sideMenu.classList.add('translate-x-full');
+    });
+</script>
 </html>

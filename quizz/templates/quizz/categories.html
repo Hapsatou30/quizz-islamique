@@ -1,23 +1,32 @@
-{% extends 'quizz/base.html' %}
-
-{% block title %}Catégories - Quizz Islamique{% endblock %}
+{% extends 'quizz/base.html' %} 
+{% load static %}
+{% block title %}Catégories - Quizz Islamique{% endblock %} 
 
 {% block content %}
-<div class="text-center mt-6 sm:mt-10">
-    <h2 class="text-2xl font-semibold text-[#2E5C4D] mb-2">Choisis une catégorie</h2>
-    <p class="text-gray-600 mb-6">Explore les différents thèmes et teste tes connaissances !</p>
-</div>
+<div class="items-center justify-center px-4 sm:px-6 lg:px-8">
+  <div class="text-center mt-6 sm:mt-10">
+    <h2 class="text-2xl font-semibold text-[#2E5C4D] mb-2">
+      Choisis une catégorie
+    </h2>
+    <p class="text-gray-600 mb-6">
+      Explore les différents thèmes et teste tes connaissances !
+    </p>
+  </div>
 
-<!-- Liste des catégories -->
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+  <!-- Liste des catégories -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
     {% for categorie in categories %}
     <a href="{% url 'quizz' categorie.slug %}"
-   class="bg-white p-5 rounded-xl shadow hover:shadow-md hover:-translate-y-1 transition text-center border border-gray-100">
-    <!-- Icône illustrative -->
-    <div class="text-4xl mb-3">📘</div>
-    <h3 class="text-lg font-semibold text-[#2E5C4D]">{{ categorie.nom }}</h3>
-</a>
-
+       class="bg-white p-2 rounded-xl shadow hover:shadow-md hover:-translate-y-1 transition text-center border border-gray-100 w-full">
+      
+       {% with path="quizz/images/"|add:categorie.slug|add:".jpg" %}
+       <img src="{% static path %}" alt="{{ categorie.nom }}"
+       class="w-full h-[250px] object-cover mx-auto mb-4 rounded-xl shadow transition-transform duration-200 hover:scale-105"
+       />
+     {% endwith %}
+      <h3 class="text-lg font-semibold text-[#2E5C4D]">{{ categorie.nom }}</h3>
+    </a>
     {% endfor %}
+  </div>
 </div>
 {% endblock %}
