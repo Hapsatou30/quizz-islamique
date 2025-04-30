@@ -1,0 +1,75 @@
+{% extends 'quizz/base.html' %}
+
+{% block title %}Quizz - {{ categorie.nom }}{% endblock %}
+
+{% block content %}
+<div class="max-w-xl mx-auto mt-8 sm:mt-12 bg-white p-6 sm:p-8 rounded-xl shadow-md">
+
+    <!-- Nom de la catégorie -->
+    <h2 class="text-xl sm:text-2xl font-semibold text-[#2E5C4D] mb-4 text-center">
+        Catégorie : {{ categorie.nom }}
+    </h2>
+
+    <!-- Question -->
+    <div class="mb-6">
+        <p class="text-lg sm:text-xl font-medium text-gray-800 mb-2">
+            {{ question.texte }}
+        </p>
+    </div>
+
+    <!-- Réponses -->
+    <form method="post" class="space-y-3">
+        {% csrf_token %}
+        {% for choix in question.choix %}
+            {% if reponse_donnee %}
+                {% if choix == bonne_reponse %}
+                    <!-- bonne réponse -->
+                    <button type="button"
+                        class="block w-full text-left px-4 py-3 bg-green-100 text-green-700 font-semibold rounded-lg">
+                        ✅ {{ choix }}
+                    </button>
+                {% elif choix == reponse_donnee %}
+                    <!-- mauvaise réponse sélectionnée -->
+                    <button type="button"
+                        class="block w-full text-left px-4 py-3 bg-red-100 text-red-700 font-semibold rounded-lg">
+                        ❌ {{ choix }}
+                    </button>
+                {% else %}
+                    <!-- autres réponses -->
+                    <button type="button"
+                        class="block w-full text-left px-4 py-3 bg-gray-100 text-gray-800 rounded-lg">
+                        {{ choix }}
+                    </button>
+                {% endif %}
+            {% else %}
+                <!-- avant soumission -->
+                <button type="submit" name="reponse" value="{{ choix }}"
+                    class="block w-full text-left px-4 py-3 bg-gray-100 hover:bg-[#2E5C4D] hover:text-white rounded-lg transition duration-200">
+                    {{ choix }}
+                </button>
+            {% endif %}
+        {% endfor %}
+    </form>
+    
+
+    <!-- Résultat après soumission -->
+    {% if reponse_donnee %}
+    <div class="mt-6 text-center">
+        {% if est_correct %}
+            <p class="text-green-600 font-semibold">✅ Bonne réponse !</p>
+        {% else %}
+            <p class="text-red-600 font-semibold">❌ Mauvaise réponse. La bonne réponse était : <strong>{{ bonne_reponse }}</strong></p>
+        {% endif %}
+
+        <a href="{% url 'quizz' categorie.slug index|add:1 score total %}"
+   class="mt-4 inline-block bg-[#2E5C4D] text-white px-5 py-2 rounded-lg hover:bg-[#244c3f] transition">
+    Question suivante →
+</a>
+
+
+
+
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

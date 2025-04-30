@@ -1,0 +1,281 @@
+{
+  "priere": {
+    "nom": "Prière",
+    "questions": [
+        {
+            "texte": "Combien de prières obligatoires y a-t-il par jour ?",
+            "choix": ["3", "4", "5", "6"],
+            "bonne_reponse": "5"
+        },
+        {
+            "texte": "Quel est le nom de la prière du matin ?",
+            "choix": ["Maghrib", "Fajr", "Isha", "Dohr"],
+            "bonne_reponse": "Fajr"
+        },
+        {
+            "texte": "Quelle prière est accomplie juste après midi ?",
+            "choix": ["Fajr", "Asr", "Dohr", "Isha"],
+            "bonne_reponse": "Dohr"
+        },
+        {
+            "texte": "Quel est le dernier pilier de la prière ?",
+            "choix": ["Le takbir", "Le salam final", "Le tashahhoud", "Le ruku’"],
+            "bonne_reponse": "Le salam final"
+        },
+        {
+            "texte": "Combien d’unités comporte la prière du Maghrib ?",
+            "choix": ["2", "3", "4", "5"],
+            "bonne_reponse": "3"
+        },
+        {
+            "texte": "Quelle direction faut-il suivre pour prier ?",
+            "choix": ["Vers le nord", "Vers Médine", "Vers la Mecque", "Vers l'est"],
+            "bonne_reponse": "Vers la Mecque"
+        },
+        {
+            "texte": "Comment s'appelle l'appel à la prière ?",
+            "choix": ["Takbir", "Salah", "Iqama", "Adhan"],
+            "bonne_reponse": "Adhan"
+        },
+        {
+            "texte": "Combien de rakats dans la prière de l’Asr ?",
+            "choix": ["2", "3", "4", "5"],
+            "bonne_reponse": "4"
+        },
+        {
+            "texte": "Que signifie 'sujood' ?",
+            "choix": ["Inclinaison", "Prosternation", "Prière", "Invocation"],
+            "bonne_reponse": "Prosternation"
+        },
+        {
+            "texte": "Quelle prière est la plus méritoire après les obligatoires ?",
+            "choix": ["Tarawih", "Tahajjud", "Dhuha", "Witr"],
+            "bonne_reponse": "Tahajjud"
+        }
+    ]
+},
+"ramadan": {
+  "nom": "Ramadan",
+  "questions": [
+      {
+          "texte": "Combien de jours dure le Ramadan ?",
+          "choix": ["28", "29 ou 30", "31", "27"],
+          "bonne_reponse": "29 ou 30"
+      },
+      {
+          "texte": "Quel est le nom du repas avant le lever du soleil ?",
+          "choix": ["Iftar", "Souhour", "Maghrib", "Dohr"],
+          "bonne_reponse": "Souhour"
+      },
+      {
+          "texte": "Quel est le nom du repas à la rupture du jeûne ?",
+          "choix": ["Souhour", "Fajr", "Iftar", "Dohr"],
+          "bonne_reponse": "Iftar"
+      },
+      {
+          "texte": "Quelle nuit est meilleure que mille mois ?",
+          "choix": ["Laylat al-Qadr", "Laylat al-Baraa", "Laylat al-Israa", "Laylat al-Nour"],
+          "bonne_reponse": "Laylat al-Qadr"
+      },
+      {
+          "texte": "Quel est le mois du jeûne en islam ?",
+          "choix": ["Rajab", "Sha’ban", "Ramadan", "Muharram"],
+          "bonne_reponse": "Ramadan"
+      },
+      {
+          "texte": "Qu’est-ce qui invalide le jeûne ?",
+          "choix": ["Dormir", "Boire intentionnellement", "Manger par oubli", "Marcher"],
+          "bonne_reponse": "Boire intentionnellement"
+      },
+      {
+          "texte": "Combien de rakats contient Tarawih ?",
+          "choix": ["2", "4", "8 ou 20", "12"],
+          "bonne_reponse": "8 ou 20"
+      },
+      {
+          "texte": "Qui est exempté du jeûne ?",
+          "choix": ["Les voyageurs", "Les enfants", "Les malades", "Tous les précédents"],
+          "bonne_reponse": "Tous les précédents"
+      },
+      {
+          "texte": "Quel acte purifie le jeûne ?",
+          "choix": ["Faire les ablutions", "La zakat al-fitr", "Lire le Coran", "Donner à manger"],
+          "bonne_reponse": "La zakat al-fitr"
+      },
+      {
+          "texte": "Quelle sourate est souvent récitée pendant Ramadan ?",
+          "choix": ["Sourate Al-Kawthar", "Sourate Al-Falaq", "Sourate Al-Baqara", "Sourate Yasin"],
+          "bonne_reponse": "Sourate Al-Baqara"
+      }
+  ]
+},
+
+"prophetes": {
+  "nom": "Prophètes",
+  "questions": [
+      {
+          "texte": "Quel prophète a construit l'arche ?",
+          "choix": ["Moussa", "Ibrahim", "Nuh", "Issa"],
+          "bonne_reponse": "Nuh"
+      },
+      {
+          "texte": "Quel prophète a reçu les Tables de la Loi ?",
+          "choix": ["Issa", "Moussa", "Yusuf", "Harun"],
+          "bonne_reponse": "Moussa"
+      },
+      {
+          "texte": "Qui est le père du prophète Ismaël ?",
+          "choix": ["Ibrahim", "Nuh", "Issa", "Adam"],
+          "bonne_reponse": "Ibrahim"
+      },
+      {
+          "texte": "Quel prophète a été jeté dans un puits ?",
+          "choix": ["Yusuf", "Issa", "Ayyoub", "Ibrahim"],
+          "bonne_reponse": "Yusuf"
+      },
+      {
+          "texte": "Qui est le dernier des prophètes ?",
+          "choix": ["Issa", "Moussa", "Muhammad", "Harun"],
+          "bonne_reponse": "Muhammad"
+      },
+      {
+          "texte": "Quel prophète parlait aux animaux ?",
+          "choix": ["Soulayman", "Dawud", "Yunus", "Isaac"],
+          "bonne_reponse": "Soulayman"
+      },
+      {
+          "texte": "Quel prophète a été avalé par un gros poisson ?",
+          "choix": ["Yunus", "Ayyoub", "Isa", "Ibrahim"],
+          "bonne_reponse": "Yunus"
+      },
+      {
+          "texte": "Quel prophète est connu pour sa patience ?",
+          "choix": ["Issa", "Ayyoub", "Yusuf", "Moussa"],
+          "bonne_reponse": "Ayyoub"
+      },
+      {
+          "texte": "Quel prophète a reçu l'Évangile ?",
+          "choix": ["Isa", "Moussa", "Yusuf", "Ibrahim"],
+          "bonne_reponse": "Isa"
+      },
+      {
+          "texte": "Quel prophète est le père de la nation musulmane ?",
+          "choix": ["Adam", "Ibrahim", "Nuh", "Ismail"],
+          "bonne_reponse": "Ibrahim"
+      }
+  ]
+},
+
+"coran": {
+  "nom": "Coran",
+  "questions": [
+      {
+          "texte": "Combien de sourates contient le Coran ?",
+          "choix": ["112", "113", "114", "115"],
+          "bonne_reponse": "114"
+      },
+      {
+          "texte": "Quelle est la plus longue sourate ?",
+          "choix": ["Al-Fatiha", "Al-Baqara", "Al-Kawthar", "Al-Nas"],
+          "bonne_reponse": "Al-Baqara"
+      },
+      {
+          "texte": "Quelle est la sourate d’ouverture ?",
+          "choix": ["Al-Falaq", "Al-Nas", "Al-Fatiha", "Al-Ikhlas"],
+          "bonne_reponse": "Al-Fatiha"
+      },
+      {
+          "texte": "Quelle langue a été révélée le Coran ?",
+          "choix": ["Arabe", "Hébreu", "Persan", "Grec"],
+          "bonne_reponse": "Arabe"
+      },
+      {
+          "texte": "Qui a compilé le Coran en un seul livre ?",
+          "choix": ["Umar", "Ali", "Othman", "Abu Bakr"],
+          "bonne_reponse": "Othman"
+      },
+      {
+          "texte": "Quelle sourate contient le verset du Trône ?",
+          "choix": ["Al-Baqara", "Al-Imran", "An-Nisa", "Al-Kahf"],
+          "bonne_reponse": "Al-Baqara"
+      },
+      {
+          "texte": "Combien de hizb dans le Coran ?",
+          "choix": ["30", "60", "120", "240"],
+          "bonne_reponse": "60"
+      },
+      {
+          "texte": "Quelle sourate est la plus courte ?",
+          "choix": ["Al-Falaq", "Al-Kawthar", "Al-Nasr", "Al-Ikhlas"],
+          "bonne_reponse": "Al-Kawthar"
+      },
+      {
+          "texte": "Qui a transmis le Coran au Prophète ﷺ ?",
+          "choix": ["Mika'il", "Israfil", "Jibril", "Malik"],
+          "bonne_reponse": "Jibril"
+      },
+      {
+          "texte": "Combien de parties (juz) y a-t-il dans le Coran ?",
+          "choix": ["20", "30", "40", "60"],
+          "bonne_reponse": "30"
+      }
+  ]
+},
+
+"les-femmes-du-prophete": {
+  "nom": "Les femmes du Prophète",
+  "questions": [
+      {
+          "texte": "Quel était le nom de la première épouse du Prophète Muhammad ﷺ ?",
+          "choix": ["Aïcha", "Hafsa", "Khadija", "Zaynab"],
+          "bonne_reponse": "Khadija"
+      },
+      {
+          "texte": "Quelle épouse du Prophète est connue pour avoir transmis de nombreux hadiths ?",
+          "choix": ["Aïcha", "Khadija", "Zaynab", "Hafsa"],
+          "bonne_reponse": "Aïcha"
+      },
+      {
+          "texte": "Combien d’épouses a eues le Prophète ﷺ au total ?",
+          "choix": ["9", "10", "11", "12"],
+          "bonne_reponse": "11"
+      },
+      {
+          "texte": "Qui était la fille de Umar Ibn al-Khattab ?",
+          "choix": ["Aïcha", "Khadija", "Hafsa", "Zaynab"],
+          "bonne_reponse": "Hafsa"
+      },
+      {
+          "texte": "Quelle épouse est la seule à avoir eu des enfants avec le Prophète ﷺ ?",
+          "choix": ["Khadija", "Aïcha", "Hafsa", "Maria"],
+          "bonne_reponse": "Khadija"
+      },
+      {
+          "texte": "Quelle épouse était copte et non arabe ?",
+          "choix": ["Aïcha", "Maria", "Hafsa", "Khadija"],
+          "bonne_reponse": "Maria"
+      },
+      {
+          "texte": "Quelle épouse était surnommée 'Umm al-Masakin' (la mère des pauvres) ?",
+          "choix": ["Zaynab bint Jahsh", "Sawda", "Zaynab bint Khuzayma", "Umm Salama"],
+          "bonne_reponse": "Zaynab bint Khuzayma"
+      },
+      {
+          "texte": "Qui est décédée peu après le mariage avec le Prophète ﷺ ?",
+          "choix": ["Hafsa", "Zaynab bint Khuzayma", "Khadija", "Aïcha"],
+          "bonne_reponse": "Zaynab bint Khuzayma"
+      },
+      {
+          "texte": "Quelle épouse était la cousine du Prophète ﷺ ?",
+          "choix": ["Zaynab bint Jahsh", "Hafsa", "Aïcha", "Maria"],
+          "bonne_reponse": "Zaynab bint Jahsh"
+      },
+      {
+          "texte": "Quelle épouse a vécu le plus longtemps après sa mort ?",
+          "choix": ["Hafsa", "Aïcha", "Khadija", "Maria"],
+          "bonne_reponse": "Aïcha"
+      }
+  ]
+}
+  }
+ 
