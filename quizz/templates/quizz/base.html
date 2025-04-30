@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Quizz Islamique{% endblock %}</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (facultatif pour une touche moderne) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl sm:text-2xl font-bold text-[#2E5C4D]">🕌 Quizz Islamique</h1>
+        <nav>
+            <ul class="flex space-x-4 text-sm sm:text-base">
+                <li><a href="{% url 'accueil' %}" class="hover:text-[#2E5C4D] transition">Accueil</a></li>
+                <li><a href="{% url 'categories' %}" class="hover:text-[#2E5C4D] transition">Catégories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="flex-grow p-4 sm:p-6">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4 text-sm text-gray-500">
+        &copy; {{ now|date:"Y" }} Quizz Islamique. Tous droits réservés.
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

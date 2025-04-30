@@ -1,0 +1,28 @@
+{
+    "priere": {
+      "nom": "Prière",
+      "questions": [
+        {
+          "texte": "Combien de prières obligatoires y a-t-il par jour ?",
+          "choix": ["3", "4", "5", "6"],
+          "bonne_reponse": "5"
+        },
+        {
+          "texte": "Quel est le nom de la prière du matin ?",
+          "choix": ["Maghrib", "Fajr", "Isha", "Dohr"],
+          "bonne_reponse": "Fajr"
+        }
+      ]
+    },
+    "ramadan": {
+      "nom": "Ramadan",
+      "questions": [
+        {
+          "texte": "Combien de jours dure le Ramadan ?",
+          "choix": ["28", "29 ou 30", "31", "27"],
+          "bonne_reponse": "29 ou 30"
+        }
+      ]
+    }
+  }
+  

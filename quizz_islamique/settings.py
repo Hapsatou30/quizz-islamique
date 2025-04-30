@@ -99,6 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Désactiver l'utilisation des sessions dans Django
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/

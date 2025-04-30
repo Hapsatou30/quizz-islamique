@@ -1,0 +1,29 @@
+{% extends 'quizz/base.html' %}
+
+{% block title %}Accueil - Quizz Islamique{% endblock %}
+
+{% block content %}
+<div class="text-center mt-10 sm:mt-16">
+    <!-- Titre principal -->
+    <h2 class="text-2xl sm:text-3xl font-semibold text-[#2E5C4D] mb-4">Bienvenue sur Quizz Islamique</h2>
+    
+    <!-- Sous-titre -->
+    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto mb-8">
+        Teste tes connaissances sur l’Islam à travers des quizz simples, ludiques et éducatifs.
+        Apprends tout en t’amusant ! 🌙📖
+    </p>
+
+    <!-- Bouton Commencer -->
+    <a href="{% url 'categories' %}" 
+       class="inline-block bg-[#2E5C4D] hover:bg-[#244c3f] text-white font-medium py-3 px-6 rounded-lg text-sm sm:text-base transition">
+        🚀 Commencer un quizz
+    </a>
+
+    <!-- Image illustratrice (optionnelle) -->
+    <div class="mt-10">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176363.png" 
+             alt="Quizz Islamique" 
+             class="w-40 sm:w-56 mx-auto opacity-90">
+    </div>
+</div>
+{% endblock %}
