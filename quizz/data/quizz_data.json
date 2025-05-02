@@ -38,9 +38,9 @@
             "bonne_reponse": "Adhan"
         },
         {
-            "texte": "Combien de rakats dans la prière de l’Asr ?",
-            "choix": ["2", "3", "4", "5"],
-            "bonne_reponse": "4"
+            "texte": "Quelle prière nocturne est effectuée en groupe pendant le mois de Ramadan ?",
+            "choix": ["Tarawih", "Tahajjud", "Witr", "Dhuha"],
+            "bonne_reponse": "Tarawih"
         },
         {
             "texte": "Que signifie 'sujood' ?",
@@ -48,9 +48,9 @@
             "bonne_reponse": "Prosternation"
         },
         {
-            "texte": "Quelle prière est la plus méritoire après les obligatoires ?",
-            "choix": ["Tarawih", "Tahajjud", "Dhuha", "Witr"],
-            "bonne_reponse": "Tahajjud"
+            "texte": "Quelle prière est décrite comme étant \"meilleure que le sommeil\" dans l'appel à la prière ?",
+            "choix": ["Fajr", "Maghrib", "Asr", "Dhuhr"],
+            "bonne_reponse": "Fajr"
         }
     ]
 },
@@ -88,9 +88,9 @@
           "bonne_reponse": "Boire intentionnellement"
       },
       {
-          "texte": "Combien de rakats contient Tarawih ?",
-          "choix": ["2", "4", "8 ou 20", "12"],
-          "bonne_reponse": "8 ou 20"
+         "texte": "Quel est l'événement marquant la fin du mois de Ramadan ?",
+        "choix": ["Aïd al-Fitr", "Aïd al-Adha", "Lailat al-Qadr", "Hajj"],
+        "bonne_reponse": "Aïd al-Fitr"
       },
       {
           "texte": "Qui est exempté du jeûne ?",
@@ -103,9 +103,9 @@
           "bonne_reponse": "La zakat al-fitr"
       },
       {
-          "texte": "Quelle sourate est souvent récitée pendant Ramadan ?",
-          "choix": ["Sourate Al-Kawthar", "Sourate Al-Falaq", "Sourate Al-Baqara", "Sourate Yasin"],
-          "bonne_reponse": "Sourate Al-Baqara"
+          "texte": "Quel est le nom du mois qui suit immédiatement le Ramadan ?",
+        "choix": ["Shawwal", "Dhul-Hijjah", "Rajab", "Safar"],
+        "bonne_reponse": "Shawwal"
       }
   ]
 },
@@ -119,9 +119,9 @@
           "bonne_reponse": "Nuh"
       },
       {
-          "texte": "Quel prophète a reçu les Tables de la Loi ?",
-          "choix": ["Issa", "Moussa", "Yusuf", "Harun"],
-          "bonne_reponse": "Moussa"
+          "texte": "Quel prophète a parlé dès le berceau ?",
+        "choix": ["Issa", "Ismaïl", "Moussa", "Zakariya"],
+        "bonne_reponse": "Issa"
       },
       {
           "texte": "Qui est le père du prophète Ismaël ?",
@@ -154,14 +154,14 @@
           "bonne_reponse": "Ayyoub"
       },
       {
-          "texte": "Quel prophète a reçu l'Évangile ?",
-          "choix": ["Isa", "Moussa", "Yusuf", "Ibrahim"],
-          "bonne_reponse": "Isa"
+          "texte": "Combien de prophètes sont mentionnés dans le Coran ?",
+        "choix": ["25", "124", "114", "40"],
+        "bonne_reponse": "25"
       },
       {
-          "texte": "Quel prophète est le père de la nation musulmane ?",
-          "choix": ["Adam", "Ibrahim", "Nuh", "Ismail"],
-          "bonne_reponse": "Ibrahim"
+          "texte": "Quel prophète est surnommé 'Khalil Allah' (l'ami d’Allah) ?",
+        "choix": ["Ibrahim", "Mouhammad", "Issa", "Dawud"],
+        "bonne_reponse": "Ibrahim"
       }
   ]
 },
@@ -180,19 +180,19 @@
           "bonne_reponse": "Al-Baqara"
       },
       {
-          "texte": "Quelle est la sourate d’ouverture ?",
-          "choix": ["Al-Falaq", "Al-Nas", "Al-Fatiha", "Al-Ikhlas"],
-          "bonne_reponse": "Al-Fatiha"
+          "texte": "Quelle sourate est connue comme 'le cœur du Coran' ?",
+        "choix": ["Yasin", "Al-Fatiha", "Al-Ikhlas", "An-Nur"],
+        "bonne_reponse": "Yasin"
       },
       {
-          "texte": "Quelle langue a été révélée le Coran ?",
-          "choix": ["Arabe", "Hébreu", "Persan", "Grec"],
-          "bonne_reponse": "Arabe"
+          "texte": "Quelle sourate est souvent récitée lors de la prière ?",
+        "choix": ["Al-Fatiha", "Al-Baqara", "Al-Mulk", "Al-Kahf"],
+        "bonne_reponse": "Al-Fatiha"
       },
       {
-          "texte": "Qui a compilé le Coran en un seul livre ?",
-          "choix": ["Umar", "Ali", "Othman", "Abu Bakr"],
-          "bonne_reponse": "Othman"
+          "texte": "Quelle sourate est appelée 'la lumière' ?",
+        "choix": ["An-Nur", "Al-Falaq", "Al-Kahf", "Al-Alaq"],
+        "bonne_reponse": "An-Nur"
       },
       {
           "texte": "Quelle sourate contient le verset du Trône ?",
@@ -246,14 +246,14 @@
           "bonne_reponse": "Hafsa"
       },
       {
-          "texte": "Quelle épouse est la seule à avoir eu des enfants avec le Prophète ﷺ ?",
-          "choix": ["Khadija", "Aïcha", "Hafsa", "Maria"],
-          "bonne_reponse": "Khadija"
+        "texte": "Comment appelle-t-on collectivement les épouses du Prophète ﷺ ?",
+        "choix": ["Les femmes du Messager", "Les Mères des croyants", "Les épouses bénies", "Les Vertueuses"],
+        "bonne_reponse": "Les Mères des croyants"
       },
       {
-          "texte": "Quelle épouse était copte et non arabe ?",
-          "choix": ["Aïcha", "Maria", "Hafsa", "Khadija"],
-          "bonne_reponse": "Maria"
+        "texte": "Quelle a été la dernière épouse que le Prophète ﷺ a épousée ?",
+        "choix": ["Maymouna", "Oum Salama", "Aïcha", "Zaynab bint Jahsh"],
+        "bonne_reponse": "Maymouna"
       },
       {
           "texte": "Quelle épouse était surnommée 'Umm al-Masakin' (la mère des pauvres) ?",
@@ -267,13 +267,13 @@
       },
       {
           "texte": "Quelle épouse était la cousine du Prophète ﷺ ?",
-          "choix": ["Zaynab bint Jahsh", "Hafsa", "Aïcha", "Maria"],
+          "choix": ["Zaynab bint Jahsh", "Hafsa", "Aïcha", "Khadija"],
           "bonne_reponse": "Zaynab bint Jahsh"
       },
       {
-          "texte": "Quelle épouse a vécu le plus longtemps après sa mort ?",
-          "choix": ["Hafsa", "Aïcha", "Khadija", "Maria"],
-          "bonne_reponse": "Aïcha"
+          "texte": "Quelle épouse du Prophète ﷺ a été enterrée au cimetière de Baqi à Médine ?",
+  "choix": ["Toutes", "Aïcha", "Hafsa", "Oum Salama"],
+  "bonne_reponse": "Toutes"
       }
   ]
 }
